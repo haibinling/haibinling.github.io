@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en"><!-- === Header Starts === --><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+
+  <title>Visual Tracking Benchmark</title>
+
+  <link href="./style_files/bootstrap.min.css" rel="stylesheet">
+  <link href="./style_files/font.css" rel="stylesheet" type="text/css">
+  <link href="./style_files/style.css" rel="stylesheet" type="text/css">
+</head>
+<!-- === Header Ends === -->
+
+
+<body data-new-gr-c-s-check-loaded="14.1029.0" data-gr-ext-installed="">
+
+
+<div class="section">
+   <div class="logo">
+		<a href="https://www3.cs.stonybrook.edu/~hling/" target="_blank"><img class="logo" src="./VTB_files/sbu_logo.jpg"></a>
+   </div>
+  
+  <center><marquee behavior="alternate" scrolldelay="800" scrollamount="35" width="800">Visual Tracking Benchmarks</marquee></center>
+  
+  <div class="author">
+        
+		<a href="https://www3.cs.stonybrook.edu/~hling/group.htm" target="_blank"><font style="font-size:26px;color:rgba(51,51,204,1)">Ling's Research Group</font></a>
+    </div>
+  
+  <div class="body">
+    
+	<center><h1>Goal</h1></center>
+	
+	<p style="margin-left: 5pt; margin-right: 5pt; text-align:left; font-size:22px;">Visual object tracking has been one of the most fundamental components in computer vision with nemurous applications. In order to facilitate its further development, visual tracking benchmarks play a crucial role in providing large-scale training video sequences (for deep trackers) and also a testbed for  assessing different tracking algorithms. Aligning with this purpose, we create various tracking benchmarks for different tracking tasks, inlcuding <b>single object tracking (SOT)</b>, <b>multi-object tracking (MOT)</b>, <b>planar object tracking (POT)</b>, <b>UAV-SOT</b>, <b>UAV-MOT</b> and <b>deformable surface tracking</b>. We hope that these benchmarks can help better understand tracking tasks for improvements and offer dedicated platforms for evaluation.</p>
+	
+	<hr>
+	<center><h2>Single Object Tracking</h2></center>
+	
+    <table width="100%" style="margin: 0pt auto; text-align: center; border-collapse: separate; border-spacing: 5pt;">
+      <tbody>
+      <tr>
+		
+        <td class="td_style1" width="50%">
+		<a href="http://vision.cs.stonybrook.edu/~lasot/" target="_blank">
+			<div class="container">
+				<img src="./VTB_files/lasot.gif" width="100%" style="margin-top: 10pt;" class="image">
+				<div class="middle">
+					<div class="text_style1">Click Me!</div>
+				</div>
+			</div>
+		</a>
+		<a href="http://vision.cs.stonybrook.edu/~lasot/" target="_blank"><p style="margin-top: 10pt; text-align:center; font-size:30px; font-weight:bold; color:rgba(110,170,25,1)">
+		<font style="color:rgba(105,216,255,1)">L</font><font style="color:rgba(105,255,173,1)">a</font><font style="color:rgba(255,219,105,1)">S</font><font style="color:rgba(244,168,116,1)">O</font><font style="color:rgba(255,105,105,1)">T</font></p></a>
+		<p style="margin-left: 5pt; margin-right: 5pt; text-align:left; font-size:20px;">LaSOT serves as a platform for large-scale training and evaluation of deep visual trackers by providing 1,550 videos with more than 3.87 millions frames with high-quality manual annotations [1, 2].</p>
+		</td class="td_style1">
+		
+		<td class="td_style3" width="50%">
+		<a href="https://hengfan2010.github.io/projects/TOTB/" target="_blank">
+			<div class="container">
+				<img src="./VTB_files/totb.gif" width="100%" style="margin-top: 10pt;" class="image">
+				<div class="middle">
+					<div class="text_style3">Click Me!</div>
+				</div>
+			</div>
+		</a>
+		<a href="https://hengfan2010.github.io/projects/TOTB/" target="_blank"><p style="margin-top: 10pt; text-align:center; font-size:30px; font-weight:bold; color:rgba(255,255,255,1); text-shadow: 0 0 3px black">
+		TOTB</p></a>
+		<p style="margin-left: 5pt; margin-right: 5pt; text-align:left; font-size:20px;">TOTB is the first benchmark for transparent object tracking. We provide 225 sequences consisting of more than 86K frames. In addition, we introduce a strong baseline achieving SOTA performance [3].</p>
+		</td class="td_style3">
+		
+      </tr>
+	  
+	  <tr>
+		
+        <td class="td_style2" width="50%">
+		<a href="https://hengfan2010.github.io/projects/TracKlinic/TracKlinic.htm" target="_blank">
+			<div class="container">
+				<img src="./VTB_files/tracklinic.gif" width="100%" style="margin-top: 10pt;" class="image">
+				<div class="middle">
+					<div class="text_style2">Click Me!</div>
+				</div>
+			</div>
+		</a>
+		<a href="https://hengfan2010.github.io/projects/TracKlinic/TracKlinic.htm" target="_blank"><p style="margin-top: 10pt; text-align:center; font-size:30px; font-weight:bold; color:rgba(110,170,25,1)">
+		<font style="color:rgba(193,9,9,1)">Trac</font><font style="color:rgba(5,8,244,1)">Klinic</font></p></a>
+		<p style="margin-left: 5pt; margin-right: 5pt; text-align:left; font-size:20px;">TracKlinic aims to provide a tool for researchers to diagnosize their trackers under different challenge factors and better understand their strengths and weaknesses for improvements [4].</p>
+		</td class="td_style4">
+		
+		<td class="td_style4" width="50%">
+		<a href="https://www3.cs.stonybrook.edu/~hling/data/TColor-128/TColor-128.html" target="_blank">
+			<div class="container">
+				<img src="./VTB_files/tc128.png" width="100%" style="margin-top: 10pt;" class="image">
+				<div class="middle">
+					<div class="text_style4">Click Me!</div>
+				</div>
+			</div>
+		</a>
+		<a href="https://www3.cs.stonybrook.edu/~hling/data/TColor-128/TColor-128.html" target="_blank"><p style="margin-top: 10pt; text-align:center; font-size:30px; font-weight:bold; color:rgba(110,170,25,1)">
+		<font style="color:rgba(129,2,9,1)">T</font><font style="color:rgba(255,0,0,1)">C</font><font style="color:rgba(1,167,60,1)">o</font><font style="color:rgba(0,0,255,1)">l</font><font style="color:rgba(255,91,255,1)">o</font><font style="color:rgba(255,185,0,1)">r</font><font style="color:rgba(0,0,0,1)">-128</font></p></a>
+		<p style="margin-left: 5pt; margin-right: 5pt; text-align:left; font-size:20px;">TColor-128 investigates the impact of color cues in videos for improving. Specifically, it comprises 128 colorful videos that are specifically designated to evaluate color-enhanced trackers [5].</p>
+		</td class="td_style4">
+		
+      </tr>
+	  
+    </tbody></table>
+	
+	
+	<br>
+	<center><h2>Multi-Object Tracking</h2></center>
+	
+    <table width="100%" style="margin: 0pt auto; text-align: center; border-collapse: separate; border-spacing: 5pt;">
+      <tbody>
+      <tr>
+		
+        <td class="td_style5" width="50%">
+		<a href="https://spritea.github.io/GMOT40/" target="_blank">
+			<div class="container">
+				<img src="./VTB_files/gmot40.gif" width="100%" style="margin-top: 10pt;" class="image">
+				<div class="middle">
+					<div class="text_style5">Click Me!</div>
+				</div>
+			</div>
+		</a>
+		<a href="https://spritea.github.io/GMOT40/" target="_blank"><p style="margin-top: 10pt; text-align:center; font-size:30px; font-weight:bold; color:rgba(110,170,25,1)">
+		<font style="color:rgba(218, 74, 88,1)">GMOT-40</font></p></a>
+		<p style="margin-left: 5pt; margin-right: 5pt; text-align:left; font-size:20px;">GMOT-40 is the first public dense dataset for Generic Multiple Object Tracking (GMOT). It contains 40 carefully annotated sequences evenly distributed among 10 object categories. Beyond the dataset, a challenging protocal, one-shot GMOT, is adopted and a series of baseline algorithms is introduced [6].</p>
+		</td class="td_style5">
+		
+      </tr>
+	  
+    </tbody></table>
+	
+	
+	<br>
+	
+
+	<center><h2>Planar Object Tracking</h2></center>
+	
+    <table width="100%" style="margin: 0pt auto; text-align: center; border-collapse: separate; border-spacing: 5pt;">
+      <tbody>
+      <tr>
+		
+        <td class="td_style6" width="50%">
+		<a href="https://www3.cs.stonybrook.edu/~hling/data/POT-210/planar_benchmark.html" target="_blank">
+			<div class="container">
+				<img src="./VTB_files/pot210.png" width="100%" style="margin-top: 10pt;" class="image">
+				<div class="middle">
+					<div class="text_style6">Click Me!</div>
+				</div>
+			</div>
+		</a>
+		<a href="https://www3.cs.stonybrook.edu/~hling/data/POT-210/planar_benchmark.html" target="_blank"><p style="margin-top: 10pt; text-align:center; font-size:30px; font-weight:bold; color:rgba(110,170,25,1)">
+		<font style="color:rgba(230, 37, 180, 1)">POT-210</font></p></a>
+		<p style="margin-left: 5pt; margin-right: 5pt; text-align:left; font-size:20px;">POT-210 is used to evaluate tracking of planar objects. It contains 210 video sequences of 30 planar objects sampled in the natural environment, which is different from previous datasets captured in constrained laboratory environment [7].</p>
+		</td class="td_style6">
+		
+      </tr>
+	  
+    </tbody></table>
+	
+	
+	<br>
+	
+
+	<center><h2>UAV Tracking</h2></center>
+	
+    <table width="100%" style="margin: 0pt auto; text-align: center; border-collapse: separate; border-spacing: 5pt;">
+      <tbody>
+      <tr>
+		
+        <td class="td_style7" width="50%">
+		<a href="http://aiskyeye.com/" target="_blank">
+			<div class="container">
+				<img src="./VTB_files/visdrone.png" width="100%" style="margin-top: 10pt;" class="image">
+				<div class="middle">
+					<div class="text_style7">Click Me!</div>
+				</div>
+			</div>
+		</a>
+		<a href="http://aiskyeye.com/" target="_blank"><p style="margin-top: 10pt; text-align:center; font-size:30px; font-weight:bold; color:rgba(110,170,25,1)">
+		<font style="color:rgba(0, 176, 240, 1)">VisDrone</font></p></a>
+		<p style="margin-left: 5pt; margin-right: 5pt; text-align:left; font-size:20px;">Two tasks on VisDrone are focused on UAV single- and multi-object tracking. More specific, VisDrone collects rich videos from various unban/suburban areas and provides training/testing sequences for SOT and MOT  as well as extensive baseline evaluations for future comparison [8].</p>
+		</td class="td_style7">
+		
+      </tr>
+	  
+    </tbody></table>
+	
+	
+	<br>
+	
+
+	<center><h2>Deformable Surface Tracking</h2></center>
+	
+    <table width="100%" style="margin: 0pt auto; text-align: center; border-collapse: separate; border-spacing: 5pt;">
+      <tbody>
+      <tr>
+		
+        <td class="td_style8" width="50%">
+		<a href="https://www3.cs.stonybrook.edu/~hling/code/deformable_graph.zip" target="_blank">
+			<div class="container">
+				<img src="./VTB_files/desurt.png" width="100%" style="margin-top: 10pt;" class="image">
+				<div class="middle">
+					<div class="text_style8">Click Me!</div>
+				</div>
+			</div>
+		</a>
+		<a href="https://www3.cs.stonybrook.edu/~hling/code/deformable_graph.zip" target="_blank"><p style="margin-top: 10pt; text-align:center; font-size:30px; font-weight:bold; color:rgba(110,170,25,1)">
+		<font style="color:rgba(112,48,160, 1)">DeSurT</font></p></a>
+		<p style="margin-left: 5pt; margin-right: 5pt; text-align:left; font-size:20px;">DeSurt is collected using a Kinect camera to evaluate tracking performance under various deformations and lighting conditions. It consists of 11 video streams and 3,361 frames showing various deformations of different types of surfaces, including seven printed pictures with different contents, two newspapers and two cushions [9].</p>
+		</td class="td_style8">
+		
+      </tr>
+	  
+    </tbody></table>
+	
+	<hr>
+	<center><p style="font-size:25px; font-weight:bold;">References</p></center>
+	
+	<ol style="margin-top:5px;">
+	
+		<li style="font-size:19px">
+			<p style="line-height: 150%; margin-top: 5px; margin-bottom: 5px;">
+				<a href="https://arxiv.org/abs/2009.03465" target="_blank"><font style="font-size:19px;color:rgba(51,51,204,1)">LaSOT: A High-quality Large-scale Single Object Tracking Benchmark</font></a>
+				<br>
+				<font style="font-size:19;">H. Fan*, H. Bai*, L. Lin, F. Yang, P. Chu, G. Deng, S. Yu, Harshit, M. Huang, J. Liu, Y. Xu, C. Liao, L. Yuan, and H. Ling</font>
+				<br>
+				<font style="font-size:19px;"><i>International Journal of Computer Vision (<b>IJCV</b>)</i>, 129: 439–461, 2021.</font>
+				<br>
+			</p>
+		</li>
+		
+		<li style="font-size:19px">
+			<p style="line-height: 150%; margin-top: 5px; margin-bottom: 5px;">
+				<a href="https://arxiv.org/abs/1809.07845" target="_blank"><font style="font-size:19px;color:rgba(51,51,204,1)">LaSOT: A High-quality Benchmark for Large-scale Single Object Tracking</font></a>
+				<br>
+				<font style="font-size:19x;">H. Fan*, L. Lin*, F. Yang*, P. Chu*, G. Deng, S. Yu, H. Bai, Y. Xu, C. Liao, and H. Ling</font>
+				<br>
+				<font style="font-size:19px;"><i>IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>)</i>, 2019.</font>
+				<br>
+			</p>
+		</li>
+		
+		<li style="font-size:19px">
+			<p style="line-height: 150%; margin-top: 5px; margin-bottom: 5px;">
+				<a href="https://arxiv.org/abs/2011.10875" target="_blank"><font style="font-size:19px;color:rgba(51,51,204,1)">Transparent Object Tracking Benchmark</font></a>
+				<br>
+				<font style="font-size:19x;">H. Fan, H. Miththanthaya, Harshit, S. Rajan, X. Liu, Z. Zou, Y. Lin, and H. Ling</font>
+				<br>
+				<font style="font-size:19px;"><i>IEEE International Conference on Computer Vision (<b>ICCV</b>)</i>, 2021.</font>
+				<br>
+			</p>
+		</li>
+		
+		<li style="font-size:19px">
+			<p style="line-height: 150%; margin-top: 5px; margin-bottom: 5px;">
+				<a href="https://openaccess.thecvf.com/content/WACV2021/papers/Fan_TracKlinic_Diagnosis_of_Challenge_Factors_in_Visual_Tracking_WACV_2021_paper.pdf" target="_blank"><font style="font-size:19px;color:rgba(51,51,204,1)">TracKlinic: Diagnosis of Challenge Factors in Visual Tracking</font></a>
+				<br>
+				<font style="font-size:19x;">H. Fan, F. Yang, P. Chu, Y. Lin, L. Yuan, and H. Ling</font>
+				<br>
+				<font style="font-size:19px;"><i>IEEE Winter Conference on Applications of Computer Vision (<b>WACV</b>)</i>, 2021.</font>
+				<br>
+			</p>
+		</li>
+		
+		<li style="font-size:19px">
+			<p style="line-height: 150%; margin-top: 5px; margin-bottom: 5px;">
+				<a href="https://www3.cs.stonybrook.edu/~hling/publication/TColor-128.pdf" target="_blank"><font style="font-size:19px;color:rgba(51,51,204,1)">Encoding Color Information for Visual Tracking:Algorithms and Benchmark</font></a>
+				<br>
+				<font style="font-size:19x;">P. Liang, E. Blasch, and H. Ling</font>
+				<br>
+				<font style="font-size:19px;"><i>IEEE Transactions on Image Processing (<b>T-IP</b>)</i>, 24(12): 5630-5644, 2015.</font>
+				<br>
+			</p>
+		</li>
+		
+		<li style="font-size:19px">
+			<p style="line-height: 150%; margin-top: 5px; margin-bottom: 5px;">
+				<a href="https://arxiv.org/abs/2011.11858" target="_blank"><font style="font-size:19px;color:rgba(51,51,204,1)">GMOT-40: A Benchmark for Generic Multiple Object Tracking</font></a>
+				<br>
+				<font style="font-size:19x;">H. Bai*, W. Cheng*, P. Chu*, K. Zhang, and H. Ling</font>
+				<br>
+				<font style="font-size:19px;"><i>IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>)</i>, 2021.</font>
+				<br>
+			</p>
+		</li>
+		
+		<li style="font-size:19px">
+			<p style="line-height: 150%; margin-top: 5px; margin-bottom: 5px;">
+				<a href="https://arxiv.org/abs/1703.07938" target="_blank"><font style="font-size:19px;color:rgba(51,51,204,1)">Planar Object Tracking in the Wild: A Benchmark</font></a>
+				<br>
+				<font style="font-size:19x;">P. Liang, Y. Wu, H. Lu, L. Wang, C. Liao, and H. Ling</font>
+				<br>
+				<font style="font-size:19px;"><i>IEEE International Conference on Robotics and Automation (<b>ICRA</b>)</i>, 2018.</font>
+				<br>
+			</p>
+		</li>
+		
+		<li style="font-size:19px">
+			<p style="line-height: 150%; margin-top: 5px; margin-bottom: 5px;">
+				<a href="https://arxiv.org/pdf/2001.06303.pdf" target="_blank"><font style="font-size:19px;color:rgba(51,51,204,1)">Vision Meets Drones: Past, Present and Future</font></a>
+				<br>
+				<font style="font-size:19x;">P. Zhu, L. Wen, D. Du, X. Bian, Q. Hu, and H. Ling</font>
+				<br>
+				<font style="font-size:19px;"><i>arXiv preprint arXiv:2001.06303</i>, 2020.</font>
+				<br>
+			</p>
+		</li>
+		
+		<li style="font-size:19px">
+			<p style="line-height: 150%; margin-top: 5px; margin-bottom: 5px;">
+				<a href="https://www3.cs.stonybrook.edu/~hling/publication/deformable%20surface-19.pdf" target="_blank"><font style="font-size:19px;color:rgba(51,51,204,1)">Deformable Surface Tracking by Graph Matching</font></a>
+				<br>
+				<font style="font-size:19x;">T. Wang, H. Ling, C. Lang, S. Feng, and X. Hou</font>
+				<br>
+				<font style="font-size:19px;"><i>IEEE International Conference on Computer Vision (<b>ICCV</b>)</i>, 2019.</font>
+			</p>
+		</li>
+
+	</ol>
+	
+	<hr>
+	<center><p style="font-size:25px; font-weight:bold;">Contact</p></center>
+	<p style="margin-left: 5pt; margin-right: 5pt; text-align:left; font-size:20px;">We appreciate questions/suggestions to authors of each paper or Haibin Ling at <a
+              href="mailto:hling@cs.stonybrook.edu"> hling@cs.stonybrook.edu</a>.</p>
+	<hr>
+  </div>
+</div>
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
