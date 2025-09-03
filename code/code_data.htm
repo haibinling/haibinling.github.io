@@ -1,0 +1,143 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+    <TITLE>Code and Data</TITLE>
+    <META content="text/html" http-equiv="Content-Type"> <!-- This is a comment --> <!-- if you have problems, mail webmaster@cs.umd.edu -->
+    <META content="MSHTML 5.00.2920.0" name="GENERATOR">
+</HEAD>
+<BODY BGCOLOR="#ddeedd">
+    
+<center>
+<H2> Code and Data </H2><!--(<a href="bibtex.htm">bibtex</a>) </H3-->
+</center>
+
+<!----------------------- Tracking ------------------------------------------>
+<hr>
+<A name="L1_Tracker">
+<h3>Visual Tracking</h3>
+<ol>
+<li><b><a href="code/L1-APG_release.zip">L1_APG (Matlab, ~40M with data)</a></b>, the code implement the L1-APG tracker described in the following paper:<br>
+	[1] C. Bao, Y. Wu, H. Ling and H. Ji, "Real time robust L1 tracker using accelerated proximal gradient approach", IEEE Conf. on Computer Vision and Pattern Recognition (<b>CVPR</b>), Rhode Island, 2012. <a href="publication/apg_L1_final.pdf">(PDF)</a>
+<br>The paper extends the following two papers: <br>
+	[2] X. Mei, H. Ling, Y. Wu, E. Blasch, and L. Bai, "Minimum Error Bounded Efficient L1 Tracker with Occlusion Detection", IEEE Conf. on Computer Vision and Pattern Recognition (<b>CVPR</b>), Colorado Springs, 2011. <a href="publication/L1BPR-cvpr11.pdf">(PDF)</a> <br>
+	[3] X. Mei and H. Ling, "Robust Visual Tracking and Vehicle Classification via Sparse Representation", IEEE Trans. on Pattern Analysis and Machine Intelligence (<b>PAMI</b>), 33(11):2259--2272, 2011.  <a href="publication/L1Tracking-pami11.pdf">(PDF)</a>
+		
+<!--li><b>L1_Tracking</b> 
+	<br><a href="code/L1_Tracking_v4_release.zip">Matlab Code</a> (version 4, fixed several bugs, 09/28/2010) 
+	<br>X. Mei and H. Ling, <a href="publication/09-tracking-iccv.pdf">Robust Visual Tracking using L1 Minimization</a>, IEEE International Conference on Computer Vision (<b>ICCV</b>), Kyoto, Japan, 2009. -->
+<br><br>
+
+<li><b><a href="data/L1_BPR_data.zip">Sequences and Annotation</b> (~190M)</a> used in
+	<br>X. Mei, H. Ling, Y. Wu, E. Blasch, and L. Bai, Minimum Error Bounded Efficient L1 Tracker with Occlusion Detection, IEEE Conf. on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2011. <a href="publication/L1BPR-cvpr11.pdf">(PDF)</a>
+
+<br><br>
+
+<li><b><a href="code/BLUT_V1.zip">BLUT tracker</b> (~11M)</a>, the L1 based tracker for tracking target through blurred sequence.
+	<br>Y. Wu, H. Ling, J. Yu, F. Li, X. Mei, and E. Cheng. "Blurred Target Tracking by Blur-driven Tracker". IEEE International Conference on Computer Vision (<b>ICCV</b>), Barcelona, Spain, 2011. <a href="publication/BLUT_iccv_11.pdf">(PDF, ~11M)</a>
+
+<br><br>
+	
+<li><b><a href="data/TUblur.zip">TUBlur sequences and annotation</b> (~190M)</a>, blurred videos annotation used in
+	<br>Y. Wu, H. Ling, J. Yu, F. Li, X. Mei, and E. Cheng. "Blurred Target Tracking by Blur-driven Tracker". IEEE International Conference on Computer Vision (<b>ICCV</b>), Barcelona, Spain, 2011. <a href="publication/BLUT_iccv_11.pdf">(PDF, ~11M)</a>
+
+</ol>
+</A>
+
+
+<!----------------------- Occlusion contour dataset ------------------------------------------>
+<hr>
+<A name="DT-OC5">
+<h3>Delaware-Temple Occlusion Contour Dataset</h3>
+<ol>
+<li><b>DT-OC5</b>, <a href="data/DT-OC5.zip">DT-OC5.zip</a> 
+<li><b>Category-16 OC Dataset</b>, <a href="data/category-16.zip">category-16.zip</a> 
+	<br>Jin Sun, Christopher Thorpe, Nianhua Xie, Jingyi Yu, and Haibin Ling.
+    <a href="publication/SunTXYL10isvc.pdf">
+  Category Classification Using Occluding Contours</a>, Int. Symposium on Visual Computing (<b>ISVC</b>), 2010. 
+</ol>
+</A>
+
+<hr>
+<A name="BRD">
+<h3>Bin ratio information</h3>
+<ol>
+<li><b>BRD-dissimilarities</b> 
+	<br><a href="code/CommonDist.m">Matlab code for dissimilarities used in the following paper</a> 
+	<br>N. Xie, H. Ling, W. Hu, and X. Zhang. 
+    <a href="publication/bin-ratio-cvpr10.pdf">Use Bin-Ratio Information for Category and Scene Classification</a>,
+    IEEE Conf. on Computer Vision and Pattern Recognition (<b>CVPR</b>), San Francisco, 2010.
+</ol>
+</A>
+
+
+<hr>
+<h3>Robust histogram comparison</h3>
+<ol>
+<li><b>EMD_L1, Efficient Earth Mover's Distance with L1 Ground Distance</b> 
+	<br><a href="code/EmdL1_v3.zip">C++ Code</a> 
+	<br><a href="https://r-forge.r-project.org/plugins/scmsvn/viewcvs.php/pkg/DESCRIPTION?rev=18&root=earthmovdist&view=markup">R warpper provided </a> by Rainer M Krug and Dirk Eddelbuettel
+	<br>H. Ling and K. Okada, <a href="publication/emd_pami_O.pdf">An Efficient Earth Mover's Distance Algorithm for Robust Histogram Comparison, </a>
+	IEEE Trans on Pattern Anal. and Mach. Intell. (<b>PAMI</b>), 29(5):840-853, 2007
+	<br><br>
+
+<li><b>Diffusion-based distance</b> 
+	<br><a href="code/DD_v1.zip">Code</a> | <a href="data/RD-cvpr06.zip">Dataset 1</a> | <a href="data/SD-cvpr06.zip">Dataset 2</a> 
+	<br>H. Ling and K. Okada, <a href="publication/Ling&Okada06cvpr.pdf">Diffusion Distance for Histogram Comparison, </a>
+	IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), Vol. I, pp. 246-253, 2006.
+	<br><br>
+</ol>
+
+
+
+<hr>
+<h3>Shape Matching</h3>
+<ol>
+<li><b>Inner-distance Shape Context</b> 
+    <br><a href="code/idsc_distribute.zip"> Matching (~113K)</a> |
+		<a href="code/inner-dist-articu-distrbution.zip"> Experiment on Articulated Shapes</a> <br>	
+		<a href="code/IDSC_SWDLEAF.zip"> Experiment on the Swedish leaves (~1M)</a> | 
+		<a href="code/IDSC_MPEG7.zip"> Experiment on the MPEG7 shapes (~1.9M)</a> <br>
+		<a href="data/SI-93.zip">Smithsonian Leaves (4.5M)</a> 
+		
+	<br>H. Ling and D.W. Jacobs, <a href="publication/id-pami-8.pdf">Shape Classification Using the Inner-Distance, </a>
+	IEEE Trans on Pattern Anal. and Mach. Intell. (<b>PAMI</b>), 29(2):286-299, 2007
+	<br><br>
+</ol>
+
+
+
+<hr>
+<h3>Deformation Invariant Matching</h3>
+<ol>
+<li><b>Geodesic Instensity Histogram (GIH)</b> 
+    <br><a href="code/GIH_v1.zip"> Matlab demo code (~900K)</a> | <a href="data/RD-iccv05.zip">Dataset 1</a>, <a href="data/SD-iccv05.zip">Dataset 2</a> | 
+	<br>H. Ling and D.W. Jacobs, <a href="publication/ling-deformation-iccv05.pdf">Deformation Invariant Image Matching, </a>
+	IEEE International Conference on Computer Vision (<b>ICCV</b>) Vol. II, pp. 1466-1473, 2005. 
+	<br><br>
+</ol>
+
+
+
+<hr>
+<h3>Image Summarization</h3>
+<ol>
+<A name="SOAR">
+<li><b>Scale and Object Aware Image Cropping (SOAT-CR)</b> 
+    <br><a href="code/SOAT_CR_v1.0.zip"> Matlab code (~225K)</a> 
+	<br>J. Sun and H. Ling, <a href="publication/soar-ijcv13.pdf">Scale and Object Aware Image Thumbnailing</a>, International Journal of Computer Vision (<b>IJCV</b>), 2013.	
+	
+	<br><br>
+
+<li><b>Automatic Thumnail Cropping</b> 
+    <br><a href="code/auto_thumb.zip"> Matlab code (~58K)</a> 
+	<br>B. Suh, H. Ling, B.B. Bederson, and D.W. Jacobs, <a href="publication/thumbnail_uist03.pdf">Automatic Thumbnail Cropping and Its Effectiveness, </a>
+	ACM Symposium on User Interface Software and Technology (<b>UIST</b>), CHI Letters, 5(2), pp. 95-104, 2003. 
+	<br><br>
+</ol>           
+
+</BODY>
+</HTML>
+
+
+
+
